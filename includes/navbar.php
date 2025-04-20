@@ -15,14 +15,18 @@
                     <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'exhibitions.php' ? 'active' : '' ?>" href="exhibitions.php">Exhibitions</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'visit.php' ? 'active' : '' ?>" href="visit.php">Visit</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'events.php' ? 'active' : '' ?>" href="events.php">Events</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'learn.php' ? 'active' : '' ?>" href="learn.php">Learn</a>
-                </li>
+                </li>      
                 <li class="nav-item">
-                    <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'visit.php' ? 'active' : '' ?>" href="visit.php">Visit</a>
+                    <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'membership.php' ? 'active' : '' ?>" href="membership.php">Membership</a>
                 </li>
+
                 <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                     <a class="btn btn-outline-light" role="button" href="#">
                         <i class="bi bi-ticket-perforated"></i> Tickets
