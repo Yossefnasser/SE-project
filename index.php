@@ -15,12 +15,15 @@ require_once 'includes/navbar.php';
             <h1 class="display-4 fw-bold mb-3">Welcome to The Heritage</h1>
             <p class="mb-4">Discover centuries of art and history</p>
             <div class="d-flex justify-content-center gap-3">
-                <a class="btn btn-primary px-4 py-2" href="#exhibitions">
-                    <i class="bi bi-collection me-2"></i>View Exhibitions
-                </a>
-                <a class="btn btn-outline-light px-4 py-2" href="#visit">
-                    <i class="bi bi-calendar3 me-2"></i>Plan Your Visit
-                </a>
+    <a class="btn btn-primary px-4 py-2" href="#exhibitions">
+        <i class="bi bi-collection me-2"></i>View Exhibitions
+    </a>
+    <a class="btn btn-outline-light px-4 py-2" href="#visit">
+        <i class="bi bi-calendar3 me-2"></i>Plan Your Visit
+    </a>
+    <a class="btn btn-warning px-4 py-2" href="memberships.php">
+        <i class="bi bi-person-vip me-2"></i>Memberships
+    </a>
             </div>
         </div>
     </div>
