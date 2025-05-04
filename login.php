@@ -10,6 +10,11 @@ require_once 'includes/navbar.php';
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h3 class="mb-4 text-center">Login</h3>
+
+                    <?php if (isset($_GET['registered'])): ?>
+                        <div class="alert alert-success">Registration successful. You can now log in.</div>
+                    <?php endif; ?>
+
                     <form action="login_process.php" method="POST">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>

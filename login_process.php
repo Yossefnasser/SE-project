@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Check if user exists
-    $stmt = $conn->prepare("SELECT id, full_name, password FROM users WHERE email = ?");
+    $stmt = $conn->prepare("SELECT user_id, username, password FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
@@ -22,18 +22,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // Verify password
         if (password_verify($password, $hashedPassword)) {
-            //  STEP 3: Set session variables
+            // Set session
             $_SESSION["user_id"] = $id;
             $_SESSION["user_name"] = $fullName;
-
-            // Optional: Set login timestamp or other info
             $_SESSION["login_time"] = time();
 
-            //  Redirect to homepage or dashboard
+            // Log login
+            $action = "Login";
+            $description = "User $fullName logged in.";
+            $log_stmt = $conn->prepare("INSERT INTO logs (user_id, action_type, action_description) VALUES (?, ?, ?)");
+            $log_stmt->bind_param("iss", $id, $action, $description);
+            $log_stmt->execute();
+
             header("Location: index.php");
             exit;
         } else {
-            die("Invalid credentials.");
+            die("Invalid password.");
         }
     } else {
         die("User not found.");

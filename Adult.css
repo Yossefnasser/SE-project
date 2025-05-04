@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.MainImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.MainImage img {
+  width: 100%;
+  height: auto;
+}
+
+.AdultText {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0px;
+}
+
+h3 {
+  color: black;
+}
+
+.container-2 {
+  padding-left: 50px;
+}
+
+.Explore-class {
+  max-width: 500px;
+  font-weight: 800;
+  box-shadow: 5px 20px 30px rgba(15, 15, 15, 0.445);
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Second-Text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.Second-Text a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.Second-Text p {
+  margin: 0;
+}
+
+.split-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 50px 20px 50px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin-right: 20px;
+}
+
+.right-text {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.container-carry-cards-of-Exhibitions {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.first-Card {
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 5px 20px 30px rgba(15, 15, 15, 0.445);
+  margin-bottom: 30px;
+}
+
+.first-Card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.first-card-info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.first-card-info p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 10px 20px 10px;
+}
+
+@media (max-width: 768px) {
+  .container-carry-cards-of-Exhibitions {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Explore-class {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .MainImage img {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .first-Card {
+    width: 100%;
+  }
+}

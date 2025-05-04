@@ -12,8 +12,8 @@ require_once 'includes/navbar.php';
                     <h3 class="mb-4 text-center">Register</h3>
                     <form action="register_process.php" method="POST">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" name="name" id="name" required>
+                            <label for="full_name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="full_name" id="full_name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
