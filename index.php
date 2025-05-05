@@ -256,6 +256,18 @@ require_once 'includes/navbar.php';
     </div>
 </section>
 
+<!-- Feedback CTA Section -->
+<section class="py-5 bg-white" id="feedback">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">We Value Your Feedback</h2>
+        <p class="mb-4 text-muted">Tell us about your experience and help us improve.</p>
+        <a href="feedback.php" class="btn btn-outline-primary px-4 py-2">
+            <i class="bi bi-chat-left-text me-2"></i> Leave Feedback
+        </a>
+    </div>
+</section>
+
+
 <!-- Newsletter - Streamlined -->
 <section class="text-white bg-primary py-5">
     <div class="container">
